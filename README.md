@@ -322,5 +322,6 @@ python train.py --data coco.yaml --cfg yolov5n.yaml --weights '' --batch-size 12
 * [TensorRT Deployment](https://github.com/wang-xinyu/tensorrtx)
 </details>
 
+
 ## License
 This project is licensed under the MIT License.
