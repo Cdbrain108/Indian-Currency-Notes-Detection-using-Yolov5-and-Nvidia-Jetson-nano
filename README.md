@@ -117,7 +117,7 @@ python3 detect.py --source <input-file-or-device-number> --weights path/to/weigh
 ```
 This will detect Indian currency notes in the specified image or video using our trained model and save the output to a new file.
 
-To stop the object detection process, press 'Ctrl+C'
+To stop the object detection process, press `Ctrl+C`
 
 
 ## Model
