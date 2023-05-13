@@ -1,0 +1,12 @@
+names:
+- '10'
+- '100'
+- '20'
+- '200'
+- '2000'
+- '50'
+- '500'
+nc: 7
+test: /content/Indian-Currency-detection-3.0-8/test
+train: /content/Indian-Currency-detection-3.0-8/train
+val: /content/Indian-Currency-detection-3.0-8/valid
