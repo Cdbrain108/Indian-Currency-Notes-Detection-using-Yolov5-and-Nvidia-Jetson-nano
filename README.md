@@ -33,6 +33,7 @@ Rs. 2000
 
 
 ## Example Results
+
 ![alt text](https://drive.google.com/uc?export=view&id=1x7OV_pzeV_s19J0QXyCH12a7PQgJWJaW)
 ![alt text](https://drive.google.com/uc?export=view&id=1BesAZxmfPUghMSl8lEUrhynn2EpONCkR)
 ![alt text](https://drive.google.com/uc?export=view&id=1MJmg5SmYC9-0BoBXz_Od3QO3Ns3usqB_)
@@ -42,7 +43,10 @@ Rs. 2000
 
 ## Prerequisites
 
+![alt text](https://drive.google.com/uc?export=view&id=12-u3_KzRAskUJNoMKXwi__Tbba2_Peyp)
+
 NVIDIA Jetson Nano
+
 
 Micro-SD Card (minimum 32GB
 
@@ -53,6 +57,8 @@ USB keyboard, mouse and monitor
 Internet connection
 
 Python 3.6 or later
+
+USB Camera for live detection
 
 ## Installation
 
