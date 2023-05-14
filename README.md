@@ -94,7 +94,15 @@ Navigate to the YOLOv5 directory using the following command.
 ```
 cd yolov5
 ```
-Load the YOLOv5 model using their pretrained weights:
+Import all the neccesary libraries.
+```
+import torch
+from matplotlib import pyplot as plt
+import numpy as np
+import cv2
+import pandas
+```
+Load the YOLOv5 model using their pretrained weights.
 ```
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5/runs/train/exp/best.pt', force_reload=True)
 ```
