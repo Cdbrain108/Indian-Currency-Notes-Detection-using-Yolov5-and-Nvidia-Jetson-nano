@@ -134,12 +134,6 @@ This will detect Indian currency notes in the specified image or video using our
 To stop the object detection process, press `Ctrl+C`
 
 
-## Model
-We used YOLOv5, a popular deep learning algorithm for object detection, to detect Indian currency notes in our dataset. YOLOv5 is fast, accurate, and easy to train, making it an ideal choice for our project.
-
-
-
-
 
 ## Dataset
 
