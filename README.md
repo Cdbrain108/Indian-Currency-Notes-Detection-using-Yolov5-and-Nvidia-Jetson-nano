@@ -88,6 +88,10 @@ git clone https://github.com/ultralytics/yolov5.git
 ``` 
 pip install -r Requirement.text
 ```
+### Trained weights for Indian Currency Detection Model
+
+- ```Best.pt``` : https://drive.google.com/file/d/1mqeg950HGSFW4YHKl0yvo_nUR0Me7sjO/view?usp=share_link
+- ```Last.pt``` : https://drive.google.com/file/d/1uHeVJK19TqbZPkZaqBSOEjXJsUdPPOJg/view?usp=share_link
 
 ## Usage
 Navigate to the YOLOv5 directory using the following command.
@@ -136,18 +140,17 @@ To stop the object detection process, press `Ctrl+C`
 
 
 ## Dataset
-
-[Indian currency Detection](https://app.roboflow.com/ds/5UvQII9ghg?key=R9CBQ4uvpM)
+For this project, I collected a dataset of thousands of images of Indian currency notes from various sources. The dataset includes six different types of notes: 10, 20, 50, 100, 500, and 2000. The images were annotated using bounding boxes to indicate the location of each note in the image.
+[Indian currency Detection](https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/48ympv8jjf-1.zip)
 
 ## Used script for training
-
+To train the YOLOv5 model on the Indian currency dataset, I used transfer learning to fine-tune a pre-trained model. The training was done on an NVIDIA GPU using the PyTorch framework. I experimented with different hyperparameters and data augmentation techniques to improve the accuracy of the model.
 ```
 !python train.py --img 640 --batch 16 --epochs 100 --data dataset.yaml --weights yolov5s.pt --device 0
 ```
-### Trained weights for Indian Currency Detection Model
 
-- ```Best.pt``` : https://drive.google.com/file/d/1mqeg950HGSFW4YHKl0yvo_nUR0Me7sjO/view?usp=share_link
-- ```Last.pt``` : https://drive.google.com/file/d/1uHeVJK19TqbZPkZaqBSOEjXJsUdPPOJg/view?usp=share_link
+## Deployment
+Once the model was trained, I deployed it on the NVIDIA Jetson Nano using the NVIDIA DeepStream SDK. I connected a USB camera to the Jetson Nano and used it to capture live videos of Indian currency notes. The YOLOv5 model was then used to detect and classify the notes in real time. I also integrated a simple GUI to display the video feed and the predicted labels.
 
 ## Contributing
 We welcome contributions to our project! If you find a bug or want to add a new feature, please submit a pull request. We also welcome suggestions for improving our model and dataset.
@@ -324,6 +327,8 @@ python train.py --data coco.yaml --cfg yolov5n.yaml --weights '' --batch-size 12
 * [TensorRT Deployment](https://github.com/wang-xinyu/tensorrtx)
 </details>
 
+## Acknowledgments
+I would like to express my gratitude to my mentors and colleagues at Sage University Indore for their support and guidance throughout this project. I would also like to thank the PyTorch and NVIDIA communities for their contributions to the open-source software that made this project possible.
 
 ## License
 This project is licensed under the MIT License.
